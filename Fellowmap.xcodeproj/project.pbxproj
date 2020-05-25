@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		D865E3E5246EEE5000821C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3E4246EEE5000821C7D /* AppDelegate.swift */; };
 		D865E3E7246EEE5000821C7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3E6246EEE5000821C7D /* SceneDelegate.swift */; };
-		D865E3E9246EEE5000821C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3E8246EEE5000821C7D /* ViewController.swift */; };
 		D865E3EC246EEE5000821C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D865E3EA246EEE5000821C7D /* Main.storyboard */; };
 		D865E3EF246EEE5000821C7D /* Fellowmap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D865E3ED246EEE5000821C7D /* Fellowmap.xcdatamodeld */; };
 		D865E3F1246EEE5700821C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D865E3F0246EEE5700821C7D /* Assets.xcassets */; };
 		D865E3F4246EEE5700821C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D865E3F2246EEE5700821C7D /* LaunchScreen.storyboard */; };
 		D865E3FF246EEE5800821C7D /* FellowmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3FE246EEE5800821C7D /* FellowmapTests.swift */; };
+		D865E40E246EF7DC00821C7D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E40C246EF7DC00821C7D /* MapViewController.swift */; };
+		D8E9C04A24718A0500EDEC4E /* Basemap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C04924718A0500EDEC4E /* Basemap.swift */; };
+		D8E9C04C24718D0000EDEC4E /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = D8E9C04B24718D0000EDEC4E /* tiles */; };
+		D8E9C04E247192DF00EDEC4E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C04D247192DF00EDEC4E /* Landmark.swift */; };
+		D8E9C0502471939600EDEC4E /* MECities3.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D8E9C04F2471939600EDEC4E /* MECities3.geojson */; };
+		D8E9C0522471940600EDEC4E /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C0512471940600EDEC4E /* LandmarkData.swift */; };
+		D8E9C0542471D58F00EDEC4E /* LandmarkCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C0532471D58F00EDEC4E /* LandmarkCategoryTableViewController.swift */; };
+		D8E9C0562471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C0552471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift */; };
+		D8E9C05B2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C05A2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift */; };
+		D8E9C05D2476C19500EDEC4E /* MapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9C05C2476C19500EDEC4E /* MapSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +40,6 @@
 		D865E3E1246EEE5000821C7D /* Fellowmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fellowmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D865E3E4246EEE5000821C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D865E3E6246EEE5000821C7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D865E3E8246EEE5000821C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D865E3EB246EEE5000821C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D865E3EE246EEE5000821C7D /* Fellowmap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fellowmap.xcdatamodel; sourceTree = "<group>"; };
 		D865E3F0246EEE5700821C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +48,17 @@
 		D865E3FA246EEE5800821C7D /* FellowmapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FellowmapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D865E3FE246EEE5800821C7D /* FellowmapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FellowmapTests.swift; sourceTree = "<group>"; };
 		D865E400246EEE5800821C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D865E40B246EF4DE00821C7D /* MapPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MapPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D865E40C246EF7DC00821C7D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D8E9C04924718A0500EDEC4E /* Basemap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basemap.swift; sourceTree = "<group>"; };
+		D8E9C04B24718D0000EDEC4E /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
+		D8E9C04D247192DF00EDEC4E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		D8E9C04F2471939600EDEC4E /* MECities3.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MECities3.geojson; sourceTree = "<group>"; };
+		D8E9C0512471940600EDEC4E /* LandmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
+		D8E9C0532471D58F00EDEC4E /* LandmarkCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCategoryTableViewController.swift; sourceTree = "<group>"; };
+		D8E9C0552471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D8E9C05A2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCategoryGroup.swift; sourceTree = "<group>"; };
+		D8E9C05C2476C19500EDEC4E /* MapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +101,19 @@
 			isa = PBXGroup;
 			children = (
 				D865E3E4246EEE5000821C7D /* AppDelegate.swift */,
+				D865E40C246EF7DC00821C7D /* MapViewController.swift */,
+				D8E9C05C2476C19500EDEC4E /* MapSettingsViewController.swift */,
+				D8E9C0572472B9C900EDEC4E /* Landmarks */,
+				D8E9C04924718A0500EDEC4E /* Basemap.swift */,
+				D865E40B246EF4DE00821C7D /* MapPlayground.playground */,
 				D865E3E6246EEE5000821C7D /* SceneDelegate.swift */,
-				D865E3E8246EEE5000821C7D /* ViewController.swift */,
 				D865E3EA246EEE5000821C7D /* Main.storyboard */,
 				D865E3F0246EEE5700821C7D /* Assets.xcassets */,
 				D865E3F2246EEE5700821C7D /* LaunchScreen.storyboard */,
 				D865E3F5246EEE5700821C7D /* Info.plist */,
 				D865E3ED246EEE5000821C7D /* Fellowmap.xcdatamodeld */,
+				D8E9C04F2471939600EDEC4E /* MECities3.geojson */,
+				D8E9C04B24718D0000EDEC4E /* tiles */,
 			);
 			path = Fellowmap;
 			sourceTree = "<group>";
@@ -100,6 +125,18 @@
 				D865E400246EEE5800821C7D /* Info.plist */,
 			);
 			path = FellowmapTests;
+			sourceTree = "<group>";
+		};
+		D8E9C0572472B9C900EDEC4E /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9C04D247192DF00EDEC4E /* Landmark.swift */,
+				D8E9C0512471940600EDEC4E /* LandmarkData.swift */,
+				D8E9C0532471D58F00EDEC4E /* LandmarkCategoryTableViewController.swift */,
+				D8E9C0552471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift */,
+				D8E9C05A2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift */,
+			);
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +222,9 @@
 			files = (
 				D865E3F4246EEE5700821C7D /* LaunchScreen.storyboard in Resources */,
 				D865E3F1246EEE5700821C7D /* Assets.xcassets in Resources */,
+				D8E9C04C24718D0000EDEC4E /* tiles in Resources */,
 				D865E3EC246EEE5000821C7D /* Main.storyboard in Resources */,
+				D8E9C0502471939600EDEC4E /* MECities3.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,10 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D865E3E9246EEE5000821C7D /* ViewController.swift in Sources */,
+				D8E9C05D2476C19500EDEC4E /* MapSettingsViewController.swift in Sources */,
+				D8E9C04A24718A0500EDEC4E /* Basemap.swift in Sources */,
+				D8E9C04E247192DF00EDEC4E /* Landmark.swift in Sources */,
+				D8E9C0562471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift in Sources */,
+				D8E9C05B2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift in Sources */,
 				D865E3EF246EEE5000821C7D /* Fellowmap.xcdatamodeld in Sources */,
 				D865E3E5246EEE5000821C7D /* AppDelegate.swift in Sources */,
+				D865E40E246EF7DC00821C7D /* MapViewController.swift in Sources */,
+				D8E9C0522471940600EDEC4E /* LandmarkData.swift in Sources */,
 				D865E3E7246EEE5000821C7D /* SceneDelegate.swift in Sources */,
+				D8E9C0542471D58F00EDEC4E /* LandmarkCategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
