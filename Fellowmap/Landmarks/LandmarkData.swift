@@ -25,9 +25,9 @@ class LandmarkData {
 		let groupDefaults = defaults.dictionary(forKey: "landmarkCategoryGroups") as? [String: Bool]
 		
 		for a in landmarkCategoryGroups {
-			var show = false
+			var show = true
 			if groupDefaults != nil {
-				show = groupDefaults?[a] ?? false
+				show = groupDefaults?[a] ?? true
 			}
 			categoryGroups.append(LandmarkCategoryGroup(name: a, landmarks: [],show: show))
 		}

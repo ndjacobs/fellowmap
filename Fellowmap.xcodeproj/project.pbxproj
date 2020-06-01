@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D846153B247D515E00E15FFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846153A247D515E00E15FFD /* MainViewController.swift */; };
 		D865E3E5246EEE5000821C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3E4246EEE5000821C7D /* AppDelegate.swift */; };
 		D865E3E7246EEE5000821C7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865E3E6246EEE5000821C7D /* SceneDelegate.swift */; };
 		D865E3EC246EEE5000821C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D865E3EA246EEE5000821C7D /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D846153A247D515E00E15FFD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D865E3E1246EEE5000821C7D /* Fellowmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fellowmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D865E3E4246EEE5000821C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D865E3E6246EEE5000821C7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,13 +103,14 @@
 			isa = PBXGroup;
 			children = (
 				D865E3E4246EEE5000821C7D /* AppDelegate.swift */,
+				D846153A247D515E00E15FFD /* MainViewController.swift */,
+				D865E3EA246EEE5000821C7D /* Main.storyboard */,
 				D865E40C246EF7DC00821C7D /* MapViewController.swift */,
 				D8E9C05C2476C19500EDEC4E /* MapSettingsViewController.swift */,
 				D8E9C0572472B9C900EDEC4E /* Landmarks */,
 				D8E9C04924718A0500EDEC4E /* Basemap.swift */,
 				D865E40B246EF4DE00821C7D /* MapPlayground.playground */,
 				D865E3E6246EEE5000821C7D /* SceneDelegate.swift */,
-				D865E3EA246EEE5000821C7D /* Main.storyboard */,
 				D865E3F0246EEE5700821C7D /* Assets.xcassets */,
 				D865E3F2246EEE5700821C7D /* LaunchScreen.storyboard */,
 				D865E3F5246EEE5700821C7D /* Info.plist */,
@@ -245,6 +248,7 @@
 				D8E9C05D2476C19500EDEC4E /* MapSettingsViewController.swift in Sources */,
 				D8E9C04A24718A0500EDEC4E /* Basemap.swift in Sources */,
 				D8E9C04E247192DF00EDEC4E /* Landmark.swift in Sources */,
+				D846153B247D515E00E15FFD /* MainViewController.swift in Sources */,
 				D8E9C0562471E9DC00EDEC4E /* LandmarkCategoryTableViewCell.swift in Sources */,
 				D8E9C05B2472BEAD00EDEC4E /* LandmarkCategoryGroup.swift in Sources */,
 				D865E3EF246EEE5000821C7D /* Fellowmap.xcdatamodeld in Sources */,

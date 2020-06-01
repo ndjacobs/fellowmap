@@ -18,6 +18,7 @@ class LandmarkCategoryTableViewController: UITableViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		landmarkGroups = loadCategories()
     }
 
     // MARK: - Table view data source

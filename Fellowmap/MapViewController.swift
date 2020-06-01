@@ -21,6 +21,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 	var landmarkGroups = [LandmarkCategoryGroup]()
 	var landmarks = [Landmark]()
 	let defaults = UserDefaults.standard
+//	var mapView = MKMapView()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,12 +46,19 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 			guard let MapSettingsViewController = segue.destination as? MapSettingsViewController else {
 				fatalError("Unexpected destination: \(segue.destination)")
 			}
+			let index = MapSettingsViewController.children.firstIndex(of: LandmarkCategoryTableViewController())!
 			
-			let landmarkCategoryTableViewController = MapSettingsViewController.children.first(of: LandmarkCategoryTableViewController)
+			let landmarkCategoryTableViewController = MapSettingsViewController.children[index] as? LandmarkCategoryTableViewController
+			
+			landmarkCategoryTableViewController?.landmarkGroups = landmarkGroups
 			
 			
-			
-			
+		case "ShowLandmarkTable":
+			guard let LandmarkTableViewController = segue.destination as? LandmarkCategoryTableViewController else {
+				fatalError("Unexpected destination: \(segue.destination)")
+			}
+			print("Showing Landmark Table")
+			LandmarkTableViewController.landmarkGroups = landmarkGroups
 		
 		default:
 			fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")

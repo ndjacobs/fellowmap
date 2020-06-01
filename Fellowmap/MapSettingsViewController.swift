@@ -11,8 +11,7 @@ import UIKit
 class MapSettingsViewController: UIViewController {
 
 	//MARK: Properties
-	
-	
+	//Passed from MapViewContoller
 	
     override func viewDidLoad() {
         super.viewDidLoad()
